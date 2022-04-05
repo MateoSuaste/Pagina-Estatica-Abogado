@@ -1,0 +1,105 @@
+//nessting
+
+//empieza header
+.header img{
+	display: none;
+
+	@media (min-width: 768px){
+		height: 50rem;
+		width: 100%;
+		display: block;
+	}
+}
+
+//terina header
+
+//empieza quien soy
+
+.quienSoy h1{
+	font-size: $textXL;
+	color: $colorH1;
+	font-weight: 700;
+	animation-name:textAparicion;
+	animation-duration:2s;
+	animation-timing-function: ease;
+}
+
+.quienSoy p{
+	font-size: $textMd;
+	text-align: center;
+	line-height: 3rem;
+	@media (min-width: 1200px){
+		width: 75%;
+ 		margin: 0 auto;
+	}
+
+}
+
+//termina quien soy
+
+
+//empieza conjunto de ramas
+
+.bg-card{
+	background-color: $colorBgCard;
+}
+
+
+.sinBordes{
+	border:none;
+}
+
+.conjuntoDeRamas h2 {
+	text-align: center;
+	font-size: $textLg;
+	margin:auto 0;
+	padding:1rem 0;
+	color:$colorH2;
+	font-weight: 700;
+	animation-name:textAparicion;
+	animation-duration:2s;
+	animation-timing-function: ease;
+	
+		
+}
+
+.conjuntoDeRamas p {
+	text-align: center;
+	font-size:$textMd;
+	margin:0 auto;
+	margin-bottom: 3rem;
+	width: 100%;
+	line-height: 3rem;
+}
+
+.conjuntoDeRamas img{
+	width: 20rem;
+	animation-name:textAparicion;
+	animation-duration:2.5s;
+	animation-timing-function: ease;
+	
+ }
+
+ @media (min-width: 768px){
+ 	.mision{
+ 		margin:0 auto;
+ 	}
+
+}
+
+//termina conjunto de ramas
+
+.bordesImg{
+	border-style: solid;
+	color: $borderColorImg;
+}
+
+
+/*Comienza animaciones*/
+
+@keyframes textAparicion{
+	from{opacity:0 }
+	to{opacity:1 }
+}
+
+//termina animaciones

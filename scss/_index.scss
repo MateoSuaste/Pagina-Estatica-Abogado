@@ -1,0 +1,49 @@
+.inicio{
+	background-image: url(../img-entrega1/oficina.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+
+    h2{
+        text-align: center;
+        font-size: $textXXL;
+        font-weight: 700;
+        font-family: $fontH2Inicio;
+        color:$colorTituloInicio;
+        width: 80%;
+        height: auto;
+        margin:0 auto;
+        animation-name:textAparicion;
+        animation-duration:2s;
+        animation-timing-function: ease;
+    }
+
+    ul li{
+        list-style-type: none;
+        font-size: $textSm;
+        width: 100%;
+        text-align:  center;
+        font-weight: 500;
+        padding-top: .5rem;
+        opacity: .6;
+
+        a{
+            text-decoration: none;
+            color:$colorAInicio;
+            width: 100%;
+            font-size: $textLg;
+
+            &:hover{
+                opacity: 1;
+                font-weight: 500;
+                color:$colorAhoverInicio;
+            }
+        }
+    }
+}
