@@ -11,11 +11,10 @@
     height: 100vh;
 
     h2{
+        @include title($textXXL, 700);
         text-align: center;
-        font-size: $textXXL;
-        font-weight: 700;
         font-family: $fontH2Inicio;
-        color:$colorTituloInicio;
+        color: map-get($map:$paleta,$key:'colorTituloInicio');
         width: 80%;
         height: auto;
         margin:0 auto;
@@ -25,24 +24,23 @@
     }
 
     ul li{
+        @include title($textSm, 500);
         list-style-type: none;
-        font-size: $textSm;
         width: 100%;
         text-align:  center;
-        font-weight: 500;
         padding-top: .5rem;
         opacity: .6;
 
         a{
             text-decoration: none;
-            color:$colorAInicio;
+            color: map-get($map:$paleta,$key:'colorAInicio');
             width: 100%;
             font-size: $textLg;
 
             &:hover{
                 opacity: 1;
                 font-weight: 500;
-                color:$colorAhoverInicio;
+                color: map-get($map:$paleta,$key:'colorAhoverInicio');
             }
         }
     }

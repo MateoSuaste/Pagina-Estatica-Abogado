@@ -1,6 +1,6 @@
 //nesting
 .navbar{
-	background-color: $colorBgNavBr;
+	background-color: map-get($map:$paleta,$key:'colorBgNavBr');
 	img{
 		width: 25rem;
  		margin:auto 0;
@@ -14,11 +14,11 @@
  				padding: .3rem 1rem;
  				a{
  					text-decoration: none;
- 					color: $colorLiNavBar;
+ 					color: map-get($map:$paleta,$key:'colorLiNavBar');
  					font-weight: 300;
  					&:hover{
  						font-weight: 700;
- 						color: $colorHoverLi;
+ 						color: map-get($map:$paleta,$key:'colorHoverLi');
  					}
  				}
 			}
@@ -26,12 +26,12 @@
 	}
 
 .navbar-toggler{
-	color: $colorNavBarToggler;
-	border-color: $colorNavBarToggler;
+	color: map-get($map:$paleta,$key:'colorNavBarToggler');
+	border-color: map-get($map:$paleta,$key:'colorNavBarToggler');
 }
 
 .navbar-toggler-icon{
 	background-image: url(../img-entrega1/boton-burguer.svg);
 	width:27px;
-	border-color:$colorBotonHamburguesa;
+	border-color: map-get($map:$paleta,$key:'colorBotonHamburguesa');
 }
