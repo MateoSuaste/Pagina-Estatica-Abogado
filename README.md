@@ -18,7 +18,7 @@ Detalles de la navegacion...
 /donde-encontrarme.html : Despliega un iframe con la ubicacion del estudio.
 /contacto.html: Muestra un form de contacto (no funcional)
 
-LINK: pagina-estatica-abogado-8wijisoqu-mateosuaste.vercel.app
+LINK: https://pagina-estatica-abogado.vercel.app/
 
 
 
